@@ -69,6 +69,7 @@
             padding-inline: var(--sp-md)
         }
 
+        /* HEADER */
         .header {
             position: fixed;
             top: 0;
@@ -129,6 +130,7 @@
             color: var(--text)
         }
 
+        /* REVEAL */
         .reveal {
             opacity: 0;
             transform: translateY(28px);
@@ -156,6 +158,7 @@
             transition-delay: .4s
         }
 
+        /* HERO */
         .hero {
             padding-top: calc(64px + var(--sp-xl));
             padding-bottom: var(--sp-xl);
@@ -279,6 +282,7 @@
             color: var(--text)
         }
 
+        /* HERO VISUAL (mock screen) */
         .hero__visual {
             position: relative;
             height: 380px
@@ -490,6 +494,7 @@
             line-height: 1.4
         }
 
+        /* STATS */
         .stats {
             border-top: 1px solid var(--border);
             border-bottom: 1px solid var(--border);
@@ -526,6 +531,7 @@
             color: var(--text-muted)
         }
 
+        /* SECTIONS */
         section {
             padding-block: var(--sp-lg)
         }
@@ -560,6 +566,7 @@
             border-top: 1px solid var(--border)
         }
 
+        /* FEATURES */
         .features__grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -601,6 +608,7 @@
             line-height: 1.7
         }
 
+        /* HOW */
         .how {
             background: var(--bg);
             border-top: 1px solid var(--border);
@@ -648,6 +656,7 @@
             margin-inline: var(--sp-sm)
         }
 
+        /* ROLES */
         .roles__grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -688,6 +697,7 @@
             line-height: 1.6
         }
 
+        /* PRESENTATION */
         .presentation {
             background: var(--bg);
             border-top: 1px solid var(--border);
@@ -848,6 +858,7 @@
             flex-wrap: wrap
         }
 
+        /* SECURITY */
         .security__grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -884,6 +895,7 @@
             line-height: 1.6
         }
 
+        /* CTA */
         .cta {
             text-align: center;
             padding-block: var(--sp-xl);
@@ -930,6 +942,7 @@
             color: var(--text-muted)
         }
 
+        /* ALPHA + FOOTER */
         .alpha-notice {
             background: var(--bg);
             border-top: 1px solid var(--border);
@@ -982,6 +995,7 @@
             color: var(--text)
         }
 
+        /* RESPONSIVE */
         @media(max-width:900px) {
             .hero__grid {
                 grid-template-columns: 1fr
@@ -1071,14 +1085,13 @@
         <div class="container">
             <div class="hero__grid">
                 <div>
-                    <p class="hero__eyebrow reveal">Образовательная платформа</p>
                     <h1 class="hero__heading reveal d1">
                         Школьное<br>пространство<br>для
                         <span class="ticker"><span id="ticker-word">учеников</span></span>
                     </h1>
-                    <p class="hero__sub reveal d2">Расписание, задания, конспекты и объявления - в одном месте. Без</p>
+                    <p class="hero__sub reveal d2">Расписание, задания, конспекты и объявления - в одном месте.</p>
                     <div class="hero__actions reveal d3">
-                        <a href="https://app.edway.space/login" class="btn">
+                        <a href="https://app.edway.space" class="btn">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="square">
                                 <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
@@ -1156,20 +1169,6 @@
 
     <hr class="section-divider">
 
-    <div class="stats">
-        <div class="container">
-            <div class="stats__grid">
-                <div class="stats__item reveal"><span class="stats__num">5</span><span class="stats__label">ролей
-                        пользователей</span></div>
-                <div class="stats__item reveal d1"><span class="stats__num">152</span><span class="stats__label">ФЗ —
-                        соответствие</span></div>
-                <div class="stats__item reveal d2"><span class="stats__num">∞</span><span class="stats__label">школ на
-                        одной платформе</span></div>
-                <div class="stats__item reveal d3"><span class="stats__num">0</span><span
-                        class="stats__label">мессенджеров для учёбы</span></div>
-            </div>
-        </div>
-    </div>
 
     <section id="features">
         <div class="container">
@@ -1186,7 +1185,8 @@
                             <line x1="3" y1="10" x2="21" y2="10" />
                         </svg></div>
                     <h3 class="card__title">Расписание</h3>
-                    <p class="card__text">Актуальное расписание для каждого класса. Классрук вносит изменения — ученики
+                    <p class="card__text">Актуальное расписание для каждого класса. Завуч вносит изменения
+                        централизованно — ученики и учителя
                         видят сразу</p>
                 </article>
                 <article class="card card--accent reveal d2">
@@ -1198,7 +1198,7 @@
                             <line x1="9" y1="17" x2="12" y2="17" />
                         </svg></div>
                     <h3 class="card__title">Домашние задания</h3>
-                    <p class="card__text">Учителя публикуют ДЗ с файлами и дедлайнами. Ученики видят всё по своим
+                    <p class="card__text">Учителя публикуют ДЗ с файлами и датами. Ученики видят всё по своим
                         предметам</p>
                 </article>
                 <article class="card card--accent reveal d3">
@@ -1217,7 +1217,7 @@
                             <path d="M13.73 21a2 2 0 0 1-3.46 0" />
                         </svg></div>
                     <h3 class="card__title">Объявления</h3>
-                    <p class="card__text">Классные от классрука, школьные от завуча. Без пересылок через мессенджеры</p>
+                    <p class="card__text">Классные от классрука, школьные от завуча</p>
                 </article>
                 <article class="card card--accent reveal d2">
                     <div class="card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
@@ -1228,7 +1228,8 @@
                             <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                         </svg></div>
                     <h3 class="card__title">Ролевой доступ</h3>
-                    <p class="card__text">Ученик, учитель, классрук, завуч — у каждого свой дашборд и свои права</p>
+                    <p class="card__text">Ученик, староста, учитель, классрук, завуч - у каждого свой дашборд и свои
+                        права</p>
                 </article>
                 <article class="card card--accent reveal d3">
                     <div class="card__icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"
@@ -1237,7 +1238,7 @@
                             <line x1="12" y1="18" x2="12.01" y2="18" />
                         </svg></div>
                     <h3 class="card__title">Работает как приложение</h3>
-                    <p class="card__text">PWA — устанавливается на телефон без App Store. Android, iOS, ПК</p>
+                    <p class="card__text">Устанавливается на телефон без скачивания. Доступно на любой платформе</p>
                 </article>
             </div>
         </div>
@@ -1245,9 +1246,9 @@
 
     <hr class="section-divider">
 
+    <!-- HOW -->
     <section class="how">
         <div class="container">
-            <span class="section-label reveal">Процесс</span>
             <h2 class="section-title reveal">Как это работает?</h2>
             <div class="how__steps">
                 <div class="how__step reveal d1">
@@ -1266,7 +1267,7 @@
                 <div class="how__step reveal d2">
                     <span class="how__num">2</span>
                     <h3 class="how__title">Участник получает доступ</h3>
-                    <p class="how__text">Логин и временный пароль передаются лично. При первом входе — смена пароля</p>
+                    <p class="how__text">Логин и временный пароль передаются лично. При первом входе - смена пароля</p>
                 </div>
                 <div class="how__connector" aria-hidden="true">
                     <svg width="48" height="16" viewBox="0 0 48 16" fill="none">
@@ -1285,26 +1286,23 @@
         </div>
     </section>
 
+    <!-- ROLES -->
     <section>
         <div class="container">
-            <span class="section-label reveal">Для кого</span>
-            <h2 class="section-title reveal">Каждый видит своё</h2>
+            <h2 class="section-title reveal">Для кого</h2>
             <div class="roles__grid">
-                <article class="role-card reveal d1"><span class="role-card__label">УЧЕНИК</span>
-                    <h3 class="role-card__title">Ученики</h3>
-                    <p class="role-card__text">Расписание, задания и объявления своего класса в одном месте</p>
+                <h3 class="role-card__title">Ученики</h3>
+                <p class="role-card__text">Расписание, задания и объявления своего класса</p>
                 </article>
-                <article class="role-card reveal d2"><span class="role-card__label">УЧИТЕЛЬ</span>
-                    <h3 class="role-card__title">Учителя</h3>
-                    <p class="role-card__text">Публикация ДЗ и конспектов по своим предметам и классам</p>
+                <h3 class="role-card__title">Учителя</h3>
+                <p class="role-card__text">Публикация ДЗ и конспектов по своим предметам и классам</p>
                 </article>
-                <article class="role-card reveal d3"><span class="role-card__label">КЛАССРУК</span>
-                    <h3 class="role-card__title">Классные рук.</h3>
-                    <p class="role-card__text">Управление расписанием и объявления для своего класса</p>
+                <h3 class="role-card__title">Классные рук.</h3>
+                <p class="role-card__text">Управление расписанием и объявления для своего класса</p>
                 </article>
-                <article class="role-card reveal d4"><span class="role-card__label">ЗАВУЧ</span>
-                    <h3 class="role-card__title">Завучи</h3>
-                    <p class="role-card__text">Школьные объявления и управление всеми пользователями</p>
+                <h3 class="role-card__title">Завучи</h3>
+                <p class="role-card__text">Централизованное управление расписанием, контроль педагогического процесса
+                </p>
                 </article>
             </div>
         </div>
@@ -1312,21 +1310,17 @@
 
     <hr class="section-divider">
 
+    <!-- PRESENTATION -->
     <section id="presentation" class="presentation">
         <div class="container">
             <div class="pres__grid">
                 <div class="reveal">
-                    <span class="section-label">Материалы</span>
                     <h2 class="section-title">Презентация<br>платформы</h2>
-                    <p class="section-sub">Подробный обзор для директоров и завучей. 10 слайдов о возможностях,
-                        безопасности и условиях подключения.</p>
+                    <p class="section-sub">Подробный обзор для всех, кого заинтересовала наша платформа</p>
                     <div class="pres__meta">
-                        <span class="meta-tag">10 слайдов</span>
-                        <span class="meta-tag">PPTX</span>
-                        <span class="meta-tag">Для руководства школы</span>
                     </div>
                     <div class="pres__actions">
-                        <a href="assets/edway-space-presentation.pptx" download class="btn">
+                        <a href="assets/edwayspace_pres.pptx" download class="btn">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="square">
                                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -1362,6 +1356,7 @@
         </div>
     </section>
 
+    <!-- SECURITY -->
     <section>
         <div class="container">
             <span class="section-label reveal">Безопасность</span>
@@ -1418,16 +1413,14 @@
 
     <hr class="section-divider">
 
+    <!-- CTA -->
     <section class="cta">
         <div class="container">
             <h2 class="cta__heading reveal">Готовы попробовать?</h2>
-            <p class="cta__sub reveal">Первая школа — бесплатно.<br>Подключение занимает один день.</p>
+            <p class="cta__sub reveal">Первая школа - бесплатно.<br>Подключение занимает один день.</p>
             <div class="cta__actions reveal">
-                <a href="https://app.edway.space/login" class="btn">Войти в платформу</a>
                 <a href="pages/support.html" class="btn btn--outline">Написать нам</a>
             </div>
-            <p class="cta__note reveal">Или напишите на <a href="mailto:support@edway.space"
-                    style="color:var(--accent)">support@edway.space</a></p>
         </div>
     </section>
 
@@ -1441,7 +1434,7 @@
             <span class="footer__copy">© 2026 edway.space by emostrStudio</span>
             <nav class="footer__nav">
                 <a href="pages/about.html" class="footer__link">О платформе</a>
-                <a href="pages/privacy.html" class="footer__link">Конфиденциальность</a>
+                <a href="pages/documents.html" class="footer__link">Документы</a>
                 <a href="pages/support.html" class="footer__link">Поддержка</a>
             </nav>
         </div>
