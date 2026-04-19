@@ -11,7 +11,7 @@
     <style>
         @font-face {
             font-family: 'Racama';
-            src: url('assets/fonts/racama-regular.woff2') format('woff2');
+            src: url('assets/fonts/Racama-Regular.woff2') format('woff2');
             font-weight: 400 700;
             font-display: swap;
         }
@@ -1023,6 +1023,10 @@
                 --sp-xl: 64px
             }
 
+            .container {
+                padding-inline: var(--sp-sm)
+            }
+
             .features__grid,
             .security__grid {
                 grid-template-columns: 1fr
@@ -1074,7 +1078,7 @@
                         Школьное<br>пространство<br>для
                         <span class="ticker"><span id="ticker-word">учеников</span></span>
                     </h1>
-                    <p class="hero__sub reveal d2">Расписание, задания, конспекты и объявления - в одном месте.</p>
+                    <p class="hero__sub reveal d2">Расписание, задания, конспекты и объявления. Все в одном месте</p>
                     <div class="hero__actions reveal d3">
                         <a href="https://app.edway.space" class="btn">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1424,6 +1428,14 @@
         (function () {
             var words = ['учеников', 'учителей', 'классруков', 'завучей'];
             var el = document.getElementById('ticker-word');
+            var tickerEl = el.parentElement;
+            var probe = document.createElement('span');
+            probe.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap';
+            tickerEl.appendChild(probe);
+            var maxW = 0;
+            words.forEach(function (w) { probe.textContent = w; if (probe.offsetWidth > maxW) maxW = probe.offsetWidth; });
+            tickerEl.removeChild(probe);
+            tickerEl.style.minWidth = maxW + 'px';
             var i = 0;
             function tick() {
                 el.classList.add('is-exiting');

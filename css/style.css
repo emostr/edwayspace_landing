@@ -76,7 +76,7 @@ a {
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.5px;
   color: var(--text);
@@ -96,7 +96,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   color: var(--text-muted);
-  padding: 6px 12px;
+  padding: 6px 14px;
   border: 1px solid transparent;
   border-radius: var(--radius);
   transition: color 0.15s, border-color 0.15s;
@@ -268,6 +268,10 @@ a {
   font-size: 14px;
   color: var(--text-muted);
   line-height: 1.65;
+}
+
+.card__actions {
+  margin-top: var(--space-sm);
 }
 
 .how {
@@ -699,6 +703,10 @@ a {
   line-height: 1.8;
 }
 
+.privacy-text + .privacy-text {
+  margin-top: 6px;
+}
+
 .text-link {
   color: var(--accent);
   transition: color 0.15s;
@@ -815,4 +823,3 @@ a {
     display: none;
   }
 }
-
