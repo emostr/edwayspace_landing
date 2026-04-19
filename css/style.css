@@ -362,6 +362,46 @@ a {
   line-height: 1.6;
 }
 
+.join {
+  padding-block: var(--space-lg);
+  border-bottom: 1px solid var(--border);
+}
+
+.join__label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  margin-bottom: var(--space-xs);
+}
+
+.join__sub {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 640px;
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+}
+
+.join__email {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: var(--space-xs);
+  transition: color 0.15s;
+}
+
+.join__email:hover {
+  color: var(--accent-dim);
+}
+
+.join__note {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
 .alpha-notice {
   background-color: var(--bg);
   border-top: 1px solid var(--border);
