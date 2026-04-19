@@ -82,8 +82,7 @@ a {
   color: var(--text);
 }
 
-.logo::after {
-  content: '.';
+.logo__dot {
   color: var(--accent);
 }
 
