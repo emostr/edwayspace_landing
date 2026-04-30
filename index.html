@@ -694,111 +694,6 @@
             border-bottom: 1px solid var(--border)
         }
 
-        .pres__grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--sp-lg);
-            align-items: center
-        }
-
-        .pres__preview {
-            position: relative;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            overflow: hidden;
-            aspect-ratio: 16/9;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: border-color .2s
-        }
-
-        .pres__preview:hover {
-            border-color: rgba(0, 120, 212, .4)
-        }
-
-        .pres__slide {
-            width: 100%;
-            height: 100%;
-            background: var(--bg);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 32px;
-            position: relative
-        }
-
-        .pres__slide::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--accent)
-        }
-
-        .pres__logo-big {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: -1px;
-            margin-bottom: 6px
-        }
-
-        .pres__logo-big span {
-            color: var(--accent)
-        }
-
-        .pres__sub {
-            font-size: 13px;
-            color: var(--text-muted)
-        }
-
-        .pres__lines {
-            margin-top: 18px;
-            display: flex;
-            flex-direction: column;
-            gap: 5px
-        }
-
-        .pres__line {
-            height: 3px;
-            background: var(--accent);
-            border-radius: 1px
-        }
-
-        .pres__line:nth-child(2) {
-            background: var(--border);
-            width: 75%
-        }
-
-        .pres__line:nth-child(3) {
-            background: var(--border);
-            width: 50%
-        }
-
-        .pres__year {
-            font-size: 11px;
-            color: var(--text-muted);
-            position: absolute;
-            bottom: 20px;
-            right: 20px
-        }
-
-        .pres__badge-tag {
-            position: absolute;
-            top: 14px;
-            right: 14px;
-            background: var(--accent);
-            color: #fff;
-            font-size: 10px;
-            font-weight: 700;
-            padding: 3px 8px;
-            border-radius: 2px;
-            letter-spacing: 1px
-        }
 
 
         .pres__meta {
@@ -874,7 +769,7 @@
             left: 20%;
             right: 20%;
             height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent), transparent)
+            background: var(--accent)
         }
 
         .cta__heading {
@@ -967,9 +862,6 @@
                 display: none
             }
 
-            .pres__grid {
-                grid-template-columns: 1fr
-            }
 
             .roles__grid {
                 grid-template-columns: 1fr 1fr
@@ -1278,12 +1170,9 @@
 
     <section id="presentation" class="presentation">
         <div class="container">
-            <div class="pres__grid">
-                <div class="reveal">
+            <div class="reveal">
                     <h2 class="section-title">Презентация<br>платформы</h2>
                     <p class="section-sub">Подробный обзор для всех, кого заинтересовала наша платформа</p>
-                    <div class="pres__meta">
-                    </div>
                     <div class="pres__actions">
                         <a href="assets/edwayspace_pres.pptx" download class="btn">
                             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -1296,21 +1185,6 @@
                         </a>
                     </div>
                 </div>
-                <div class="pres__preview reveal d2">
-                    <div class="pres__slide">
-                        <div class="pres__badge-tag">.PPTX</div>
-                        <div class="pres__logo-big">edway<span>.</span>space</div>
-                        <div class="pres__sub">единая школьная платформа</div>
-                        <div class="pres__lines">
-                            <div class="pres__line"></div>
-                            <div class="pres__line"></div>
-                            <div class="pres__line"></div>
-                        </div>
-                        <div class="pres__year">by emostrStudio, 2026</div>
-                    </div>
-
-                </div>
-            </div>
         </div>
     </section>
 
